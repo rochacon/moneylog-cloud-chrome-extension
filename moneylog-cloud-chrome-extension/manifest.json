@@ -1,21 +1,17 @@
 {
   "author": "Rodrigo Chacon <rochacon@gmail.com>",
   "name": "Moneylog Cloud",
-  "description": "Open Moneylog Cloud",
+  "description": "Moneylog Cloud",
   "version": "1.0",
-  "background_page": "background.html",
-  "browser_action": {
-    "default_icon": "icons/16.png",
-    "default_title": "Monelog Cloud"
+  "app": {
+    "launch": {
+      "web_url": "http://moneylog-cloud.aurelio.net/"
+    },
+    "urls": [
+      "*://moneylog-cloud.aurelio.net/"
+    ]
   },
   "icons": {
-    "16": "icons/16.png",
-    "48": "icons/48.png",
-    "128": "icons/128.png"
-  },
-  "permissions": [
-    "tabs",
-    "http://moneylog-cloud.aurelio.net/*"
-  ],
-  "manifest_version": 2
+    "128": "icon_114.png"
+  }
 }
